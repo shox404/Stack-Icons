@@ -2,7 +2,7 @@ import {useIcons} from "@/app/store/main";
 import {useRef, useState} from "react";
 import {motion} from "framer-motion";
 import {download} from "@/app/utils";
-import Icon from "@/app/components/icon";
+import Icon from "@/app/components/svg-icon";
 
 export default function Single() {
     const {single} = useIcons();
