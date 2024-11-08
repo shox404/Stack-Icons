@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
       get()
-  }, []);
+  });
 
   return (
       <main className="p-7">
