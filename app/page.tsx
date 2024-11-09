@@ -10,20 +10,20 @@ export default function Home() {
   const {get,filter} = useIcons();
 
   useEffect(() => {
-      get()
-  });
+      get();
+  },[true]);
 
   return (
-      <main className="p-7">
-          <div className="text-center p-7">
+      <main className="lg:p-7 overflow-x-hidden">
+          <div className="text-center lg:p-7">
               <div className="flex items-center justify-center">
                   <Image src="/logo-tr.png" alt="logo" width={100} height={100} />
-                  <h1 className="text-5xl font-bold text-gray-800">Stack Icons</h1>
+                  <h1 className="text-2xl lg:text-5xl font-bold text-gray-800">Stack Icons</h1>
               </div>
-              <p className="text-xl font-medium text-balance mt-5 m-auto">A well-crafted portfolio showcases your impact
+              <p className="text-sm lg:text-xl font-medium text-balance mt-2 lg:mt-5 m-auto">A well-crafted portfolio showcases your impact
                   and abilities, opening doors to new opportunities.</p>
           </div>
-          <div className="navbar bg-neutral text-neutral-content w-10/12 my-5 mx-auto rounded-2xl">
+          <div className="navbar bg-neutral text-neutral-content w-[95%] lg:w-10/12 my-5 mx-auto rounded-2xl">
               <label className="input input-bordered text-black rounded-xl w-full flex items-center gap-2">
                   <input type="text" className="grow" placeholder="Search" onChange={(e) => filter(e.target.value)}/>
                   <svg

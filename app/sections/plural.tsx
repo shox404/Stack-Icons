@@ -29,7 +29,7 @@ export default function Plural() {
                     {item}
                 </a>)}
             </div>
-            <motion.div layout className="flex flex-wrap items-center justify-center gap-2 px-10">
+            <motion.div layout className="flex flex-wrap items-center justify-center gap-2 lg:px-10">
                 {plural.filter(e=>e.includes(tab)).map((item: string, index: number) =>
                     <motion.div layout className="card bg-neutral text-neutral-content w-30 shadow-xl rounded-2xl" key={index} onClick={() => openModal(item)}>
                         <div className="tooltip" data-tip={item}>
